@@ -12,4 +12,4 @@ Currently, we are in the planning phase of several projects, exploring both soft
 
 ## Tips and Tricks
 
-- files postfixed with .md are mark down files, use a file viewer to get the best results
+- files appened with .md are mark down files, use a file viewer to get the best results

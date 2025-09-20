@@ -28,6 +28,7 @@ The purpose of this project is to design and develop a preventive maintenance sy
 
 - Automated or reactionary control measures (e.g., shutting down MCC units)
 - User-facing graphical display or GUI software
+- Not designed for high-pressure jets or long submersion
 
 ## Functional Requirements
 
@@ -41,6 +42,10 @@ The system shall:
 5. Provide at least one form of output communication (e.g., USB, Ethernet, or wireless).
 6. Allow authorized users to configure detection thresholds and reporting intervals.
 7. Continue operation under normal MCC environmental conditions (temperature, dust, vibration).
+8. IP67 rated:
+   - Complete protection against dust.
+   - No ingress of dust; full contact protection.
+   - Protected against immersion in water up to 1 meter depth for up to 30 minutes.
 
 ## Non-Functional Requirements
 
