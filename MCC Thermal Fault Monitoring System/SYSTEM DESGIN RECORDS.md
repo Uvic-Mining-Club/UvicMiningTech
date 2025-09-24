@@ -13,6 +13,9 @@ Short description of the system.
 
 ## Design Diagram & Highlevel Overveiw
 
+- I/O primary cat 5 or cat 6 ethernet
+  - maybe make some consideration for how much power ethernet with require.
+
 ## Project Breakdown
 
 ### Software

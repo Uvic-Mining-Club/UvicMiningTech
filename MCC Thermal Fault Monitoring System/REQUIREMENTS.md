@@ -63,7 +63,7 @@ The system shall meet the following quality attributes:
 
 3. **Power Efficiency**
 
-   - The system shall consume less than 15W under normal operating conditions.
+   - The system shall consume less than 75W under normal operating conditions.
    - The system shall support low-power standby mode when not actively monitoring.
 
 4. **Compliance and Standards**
