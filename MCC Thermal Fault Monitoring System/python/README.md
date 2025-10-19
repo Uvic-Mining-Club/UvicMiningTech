@@ -7,9 +7,18 @@ The purpose of this project is to design and develop a preventive maintenance sy
 ## Table of Contents
 
 - [Installation](#installation)
-- [Quick Start Guide](#quick-start-guide)
 
-## quick-start-guide
+## Installation
+
+1. Install Raspberry Pi OS Lite on your Raspberry Pi. -> likely need a microSD card.
+
+   - Follow the official guide: [Raspberry Pi OS Installation](https://www.raspberrypi.com/software/)
+
+2. Wire in the MLX90640 Thermal Camera to the Raspberry Pi using I2C interface.
+
+   - Refer to the [MLX90640 Datasheet](./docs/MLX90640-Datasheet-Melexis.pdf) for pin connections.
+
+3. Set up the software environment on the Raspberry Pi:
 
 ```bash
 git clone <repository_url>
@@ -21,6 +30,15 @@ sudo apt update
 sudo apt install -y i2c-tools python3-smbus python3-pip
 
 sudo i2cdetect -y 1       // Verify camera connection, should show 0x33
+
+cd MMC%20Thermal%20Fault%20Monitoring%20System/python/
+python3 -m env venv venv    // Create virtual environment
+source venv/bin/activate    // Activate virtual environment
+pip3 install -e .         // Install required python packages
 ```
 
-## Installation
+4. Run the main application:
+
+```bash
+python3 src/main.py
+```
