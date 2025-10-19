@@ -18,7 +18,11 @@ The purpose of this project is to design and develop a preventive maintenance sy
 
    - Refer to the [MLX90640 Datasheet](./docs/MLX90640-Datasheet-Melexis.pdf) for pin connections.
 
-3. Set up the software environment on the Raspberry Pi:
+3. SSH into the Raspberry Pi from your computer.
+
+4. Set up the software environment on the Raspberry Pi:
+
+Run the following commands in the terminal of the Raspberry Pi:
 
 ```bash
 git clone <repository_url>
@@ -37,7 +41,7 @@ source venv/bin/activate    // Activate virtual environment
 pip3 install -e .         // Install required python packages
 ```
 
-4. Run the main application:
+5. Run the main application:
 
 ```bash
 python3 src/main.py
