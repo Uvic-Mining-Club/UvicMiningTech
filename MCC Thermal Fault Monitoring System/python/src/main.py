@@ -43,13 +43,15 @@ def process_frame(frame):
     return frame.reshape((ROWS, COLS))
 
 def save_image(thermal_data, filename="thermal_image.jpg"):
-    """Save the thermal data as an image file."""
-    plt.imshow(thermal_data, cmap='inferno', interpolation='nearest')
+    plt.imshow(thermal_data, cmap='inferno', interpolation='none',
+               vmin=np.min(thermal_data), vmax=np.max(thermal_data))  # scale to data
     plt.colorbar(label='Temperature (°C)')
     plt.title("MLX90640 Thermal Image")
-    plt.savefig(filename)
+    plt.savefig(filename, dpi=200)
     plt.close()
+    print(thermal_data)
     print(f"Saved thermal image as {filename}")
+
 
 if __name__ == "__main__":
     try:
