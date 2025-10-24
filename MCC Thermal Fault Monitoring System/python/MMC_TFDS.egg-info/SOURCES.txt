@@ -1,8 +1,0 @@
-README.md
-setup.py
-MMC_TFDS.egg-info/PKG-INFO
-MMC_TFDS.egg-info/SOURCES.txt
-MMC_TFDS.egg-info/dependency_links.txt
-MMC_TFDS.egg-info/requires.txt
-MMC_TFDS.egg-info/top_level.txt
-tests/__init__.py
