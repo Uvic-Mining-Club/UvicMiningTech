@@ -36,8 +36,9 @@ The purpose of this project is to design and develop a preventive maintenance sy
 
    sudo i2cdetect -y 1       // Verify camera connection, should show 0x33
 
-   cd MMC%20Thermal%20Fault%20Monitoring%20System/python/
-   python3 -m venv venv    // Create virtual environment   source venv/bin/activate    // Activate virtual environment
+   cd UvicMiningTech/MMC%20Thermal%20Fault%20Monitoring%20System/python/
+   python3 -m venv venv    // Create virtual environment
+   source venv/bin/activate    // Activate virtual environment
    pip3 install -e .         // Install required python packages
    ```
 
