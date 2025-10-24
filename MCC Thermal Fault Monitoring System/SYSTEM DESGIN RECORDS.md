@@ -1,6 +1,6 @@
 # Uvic Mining Club Design Document
 
-## Introduction / Project Overveiw
+## Introduction / Project Overview
 
 Short description of the system.
 
@@ -11,7 +11,7 @@ Short description of the system.
   - [Software](#software)
   - [Hardware](#hardware)
 
-## Design Diagram & Highlevel Overveiw
+## Design Diagram & Highlevel Overview
 
 - I/O primary cat 5 or cat 6 ethernet
   - maybe make some consideration for how much power ethernet with require.
