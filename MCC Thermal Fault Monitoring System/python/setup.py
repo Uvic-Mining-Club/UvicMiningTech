@@ -12,7 +12,9 @@ setup(
     install_requires=[                # Dependencies
         "numpy",
         "matplotlib",
-        "smbus2"
+        "smbus2",
+        "adafruit-circuitpython-mlx90640",
+
     ],
     classifiers=[                     # Metadata for PyPI
         "Programming Language :: Python :: 3",

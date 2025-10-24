@@ -14,4 +14,3 @@ What needs doing:
   - Camera window
   - Output port
 - Mount
-  -

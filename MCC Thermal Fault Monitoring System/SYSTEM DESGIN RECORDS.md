@@ -9,7 +9,11 @@ Short description of the system.
 - [Design Diagram](#design-diagram-&-highlevel-overveiw)
 - [Tech Stack](#tech-stack)
   - [Software](#software)
+    - [Libaries](#libaries-->-dependency-list)
+    - [OS](#os-->-raspberry-pi-os-lite)
   - [Hardware](#hardware)
+    - [Camera](#camera-->-mlx90640-thermal-camera-wide-angle)
+    - [Controller](#controller-->-raspberry-pi-zero-2-w)
 
 ## Design Diagram & Highlevel Overview
 
