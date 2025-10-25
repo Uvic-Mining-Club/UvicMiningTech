@@ -8,7 +8,6 @@ import matplotlib.pyplot as plt
 # Initialize I2C
 i2c = busio.I2C(board.SCL, board.SDA)
 mlx = adafruit_mlx90640.MLX90640(i2c)
-
 mlx.refresh_rate = adafruit_mlx90640.RefreshRate.REFRESH_2_HZ
 
 frame = [0] * 768  # 32*24 pixels
