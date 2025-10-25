@@ -1,5 +1,6 @@
 from camera import Camera_MLX90640
 from fault.ThermalFaultDetector import ThermalFaultDetector
+import time
 
 def main():
     # Initialize camera
@@ -17,4 +18,6 @@ def main():
             break
         else:
             print("No faults detected.")
+        time.sleep(1)  # pauses for 2 seconds
+
         
