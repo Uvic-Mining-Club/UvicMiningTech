@@ -68,3 +68,13 @@ Short description of the system.
 - [datasheet](./docs/Raspberry-Pi-Zero-2-W-Product-Brief.pdf)
 - [pin-map](./docs/raspberry-pi-zero-2-w-reduced-schematics.pdf)
 - [test-pads](./docs/raspberry-pi-zero-2-w-test-pads.pdf)
+
+| Pin Number | Pin Name     | Description         | Connection   |
+| ---------- | ------------ | ------------------- | ------------ |
+| 1          | 3.3V         | Power Supply (3.3V) | MLX90640 VDD |
+| 3          | GPIO 2 (SDA) | I2C Data            | MLX90640 SDA |
+| 5          | GPIO 3 (SCL) | I2C Clock           | MLX90640 SCL |
+| 6          | GND          | Ground              | Common GND   |
+| 29         | GPIO 5       | Status LED          | Green LED    |
+| 31         | GPIO 6       | Status LED          | Yellow LED   |
+| 37         | GPIO 26      | Status LED          | Red LED      |
