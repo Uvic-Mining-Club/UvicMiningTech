@@ -3,8 +3,9 @@ import busio
 import adafruit_mlx90640
 import matplotlib.pyplot as plt 
 import numpy as np
+from CameraInterface import CameraInterface
 
-class Camera_MLX90640:
+class Camera_MLX90640(CameraInterface):
     def __init__(self,buffer_size=16):
         # Initialize thermal camera
         self.initialize_I2C()
@@ -47,7 +48,11 @@ class Camera_MLX90640:
         plt.savefig(filename, dpi=200)
         plt.close()
 
-    def get_latest_image(self):
+    def get_image_latest(self):
         # Get the most recent thermal image
         return self.thermal_data[(self.buffer - 1) % self.buffer_size]
+    
+    def get_image_history(self):
+        # Get all stored thermal images in the buffer
+        return self.thermal_data
         
