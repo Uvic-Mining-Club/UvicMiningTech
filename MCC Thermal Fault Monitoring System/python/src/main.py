@@ -8,7 +8,7 @@ def main():
 
     # Initialize fault detector
     fault_detector = ThermalFaultDetector(camera)
-
+    print("starting Polling")
     while(True):
         fault_detector.detect_faults(threshold=40)
         fault_detector.log()
@@ -20,4 +20,5 @@ def main():
             print("No faults detected.")
         time.sleep(1)  # pauses for 2 seconds
 
-        
+main()
+

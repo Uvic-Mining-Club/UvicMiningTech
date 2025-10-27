@@ -17,12 +17,12 @@ class ThermalFaultDetector:
     def log(self, filename="fault_log.txt"):
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         with open(filename, "a") as f:
-            f.write(f"{timestamp} - Fault detected: {self.has_faults} - Tempature Range: {self.get_average_temperature} - Tempature Average: {self.get_average_temperature()}\n")
+            f.write(f"{timestamp} - Fault detected: {self.has_faults} - Tempature Range: {self.get_temperature_range()} - Tempature Average: {self.get_average_temperature()}\n")
 
     def get_average_temperature(self):
         lastest_image = self.camera.get_latest_image()
-        return np.mean(lastest_image)
+        return f"{np.mean(lastest_image):.4f}"
 
     def get_temperature_range(self):
         lastest_image = self.camera.get_latest_image()
-        return f"Min: {np.min(lastest_image)} , Max: {np.max(lastest_image)}"
+        return f"Min: {np.min(lastest_image):.4f} , Max: {np.max(lastest_image):.4f}"

@@ -1,0 +1,6 @@
+2025-10-27 06:06:23 - Fault detected: False - Tempature Range: Min: 17.5273 , Max: 26.8171 - Tempature Average: 19.8969
+2025-10-27 06:06:24 - Fault detected: False - Tempature Range: Min: 17.6090 , Max: 26.8942 - Tempature Average: 19.9452
+2025-10-27 06:06:26 - Fault detected: False - Tempature Range: Min: 17.6257 , Max: 26.8258 - Tempature Average: 19.9106
+2025-10-27 06:06:27 - Fault detected: False - Tempature Range: Min: 17.5185 , Max: 26.8890 - Tempature Average: 19.8144
+2025-10-27 06:06:29 - Fault detected: False - Tempature Range: Min: 17.5606 , Max: 27.6640 - Tempature Average: 20.0580
+2025-10-27 06:06:30 - Fault detected: True - Tempature Range: Min: 17.7210 , Max: 42.1365 - Tempature Average: 20.9062

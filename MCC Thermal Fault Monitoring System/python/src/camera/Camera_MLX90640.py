@@ -22,7 +22,14 @@ class Camera_MLX90640:
     def capture_image(self, frame):
         # Capture a new thermal image data
         self.mlx.getFrame(frame)
-        self.thermal_data[self.buffer % self.buffer_size] = (np.reshape(frame, (24, 32)))  # Rows x Cols
+        reshaped_frame = np.reshape(frame, (24, 32))
+        if len(self.thermal_data) < self.buffer_size:
+        # Fill buffer initially
+            self.thermal_data.append(reshaped_frame)
+        else:
+        # Overwrite oldest frame when buffer is full
+            self.thermal_data[self.buffer % self.buffer_size] = reshaped_frame
+
         self.buffer += 1
         return self.get_latest_image()
 
