@@ -33,6 +33,26 @@ temp_sensor_pin.direction = digitalio.Direction.INPUT
 # Check if GPIO is working
 print(f"GPIO pin {TEMPATURE_GPIO} initialized for temperature sensor input.")
 
+#Polling Buttons
+
+BUTTON_1_GPIO = board.D32
+BUTTON_2_GPIO = board.D33
+button_1 = digitalio.DigitalInOut(BUTTON_1_GPIO)
+button_1.direction = digitalio.Direction.INPUT
+button_1.pull = digitalio.Pull.UP
+button_2 = digitalio.DigitalInOut(BUTTON_2_GPIO)
+button_2.direction = digitalio.Direction.INPUT
+button_2.pull = digitalio.Pull.UP
+print(f"GPIO pins {BUTTON_1_GPIO} and {BUTTON_2_GPIO} initialized for button inputs.")
+print("Polling buttons for 10 seconds. Press Button 1 or Button 2 to test.")
+start_time = time.time()
+while time.time() - start_time < 10:
+    if not button_1.value:
+        print("Button 1 Pressed!")
+    if not button_2.value:
+        print("Button 2 Pressed!")
+    time.sleep(0.1)
+    
 
 
 
