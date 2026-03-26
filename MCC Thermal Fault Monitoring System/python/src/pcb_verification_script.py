@@ -33,10 +33,10 @@ temp_sensor_pin.direction = digitalio.Direction.INPUT
 # Check if GPIO is working
 print(f"GPIO pin {TEMPATURE_GPIO} initialized for temperature sensor input.")
 
-#Polling Buttons
+#Polling Buttons that are Active high
 
-BUTTON_1_GPIO = board.D32
-BUTTON_2_GPIO = board.D33
+BUTTON_1_GPIO = board.D38
+BUTTON_2_GPIO = board.D40
 button_1 = digitalio.DigitalInOut(BUTTON_1_GPIO)
 button_1.direction = digitalio.Direction.INPUT
 button_1.pull = digitalio.Pull.UP
