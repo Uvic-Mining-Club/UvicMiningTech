@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-TEMPATURE_GPIO = board.D38 #Physical pin 38, GPIO20, for temperature sensor
+TEMPATURE_GPIO = board.D27 #Physical pin 38, GPIO20, for temperature sensor
 
 # Initialize I2C
 i2c = busio.I2C(board.SCL, board.SDA)
@@ -35,8 +35,8 @@ print(f"GPIO pin {TEMPATURE_GPIO} initialized for temperature sensor input.")
 
 #Polling Buttons that are Active high
 
-BUTTON_1_GPIO = board.D38
-BUTTON_2_GPIO = board.D40
+BUTTON_1_GPIO = board.D28
+BUTTON_2_GPIO = board.D29
 button_1 = digitalio.DigitalInOut(BUTTON_1_GPIO)
 button_1.direction = digitalio.Direction.INPUT
 button_1.pull = digitalio.Pull.UP
