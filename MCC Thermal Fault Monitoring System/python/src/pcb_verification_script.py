@@ -9,8 +9,8 @@ TEMPERATURE_GPIO = board.D27
 
 # GPIO 5  = Physical Pin 29
 # GPIO 6  = Physical Pin 31
-BUTTON_1_GPIO = board.D5
-BUTTON_2_GPIO = board.D6
+BUTTON_1_GPIO = board.D20
+BUTTON_2_GPIO = board.D21
 
 # ── I2C Test ─────────────────────────────────────────────────
 print("=" * 40)
